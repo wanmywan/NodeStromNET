@@ -1,8 +1,32 @@
+
 # NodeStorm-C2
+
+![Go Version](https://img.shields.io/badge/golang-go1.25.5+-blue.svg)
+[![Twitter](https://img.shields.io/twitter/follow/wanzroot?label=wanzroot&style=social)]([https://twitter.com/intent/follow?screen_name=al3x_n3ff](https://x.com/wanzroot))
+
+
+```text
+                    _.-'`)     (`'-._
+                .' -' / __    \ '- '.
+               / .-' ( '-,`|   ) '-. \
+              / .-',-`'._/ \_.'`-,'-. \
+             ; ; /.`'.-'    '-.'`.\ ; ;
+             | .-'|\//'-/   \-'\\/|'-. |
+             |` |; :|'._\   /_,'|: ;| `|
+             || : |;    `Y-Y`    ;| : ||
+             \:| :/======"="======\| |:/
+              /_:-`                 `-;_\
+            NodeStorm.Net Decentralized C2
+            @HeloKity @Dr909 @Ashiraa
+
+[*] Welcome to the NodeStrom.Net Decentralized C2, please type 'help' for options
+[*] The system is patient. It always waits for its targets to reveal themselves.
+
+```
 
 NodeStorm-C2 is an advanced, decentralized Command and Control (C2) framework built entirely on Peer-to-Peer (P2P) architecture. Written in Go, it leverages the powerful `libp2p` networking stack to provide highly resilient, secure, and untraceable communication between the Controller and its Agents.
 
-## 🚀 How It Works
+## How It Works
 
 Unlike traditional C2 frameworks that rely on a central server (which acts as a single point of failure and is easily identifiable by blue teams), NodeStorm-C2 operates on a distributed P2P network using Kademlia Distributed Hash Tables (DHT).
 
@@ -11,7 +35,7 @@ Unlike traditional C2 frameworks that rely on a central server (which acts as a 
 3. **NAT Traversal & Hole Punching**: Thanks to `libp2p`, NodeStorm-C2 automatically handles complex networking setups. It supports UPnP/NAT-PMP, TCP/UDP Hole Punching, and fallback Auto-Relays. This means Agents can directly talk to the Controller even if both are sitting behind strict firewalls or Carrier-Grade NATs, without needing exposed inbound ports.
 4. **Encrypted Streams**: When the Controller interacts with an Agent, a direct multiplexed stream is opened. All traffic within this stream—including commands, files, and proxy data—is symmetrically encrypted using your unique shared password.
 
-## 💎 Key Advantages
+## Key Advantages
 
 - **Zero Central Infrastructure**: No need to purchase, configure, or hide a central C2 server, domain name, or use redirectors. The global P2P network itself is the infrastructure. This makes infrastructure takedowns extremely difficult.
 - **Unstoppable Connections**: Advanced NAT hole-punching and relaying mechanisms ensure you can reliably interact with agents regardless of inbound port restrictions or firewall configurations.
@@ -19,7 +43,7 @@ Unlike traditional C2 frameworks that rely on a central server (which acts as a 
 - **Multi-Platform Support**: Built natively in Go, it supports Windows, Linux, and macOS out of the box.
 - **Stealth & Resilience**: Agents run in background loops with jitter incorporated into their beacons to avoid predictable network patterns. They can ignore termination signals or run masked/as a service.
 
-## 🛠 Features
+## Features
 
 The Controller provides a beautiful, syntax-highlighted Command Line Interface (CLI) with tab-autocompletion. Supported features include:
 
@@ -33,7 +57,7 @@ The Controller provides a beautiful, syntax-highlighted Command Line Interface (
 * **`screenshot <id>`**: *(Windows Only)* Take stealthy screen captures of the target's desktop.
 * **`keylog <id> [START|STOP|DUMP|CLEAR]`**: *(Windows Only)* Background asynchronous keylogger that tracks keyboard inputs to a hidden temporary log.
 
-## 🚀 Quick Start & Usage
+## Quick Start & Usage
 
 ### 1. Building the Project
 
